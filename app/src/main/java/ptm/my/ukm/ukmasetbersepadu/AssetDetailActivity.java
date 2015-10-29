@@ -9,7 +9,7 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import my.ukm.ptm.ukmassetstracker.model.Asset;
+import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 
 public class AssetDetailActivity extends AppCompatActivity {
 

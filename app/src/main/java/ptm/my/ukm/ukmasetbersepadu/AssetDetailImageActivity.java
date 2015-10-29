@@ -16,8 +16,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import me.iwf.photopicker.PhotoPickerActivity;
 import me.iwf.photopicker.utils.PhotoPickerIntent;
-import my.ukm.ptm.ukmassetstracker.adapter.PhotoAdapter;
-import my.ukm.ptm.ukmassetstracker.model.Asset;
+import ptm.my.ukm.ukmasetbersepadu.adapter.PhotoAdapter;
+import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 
 public class AssetDetailImageActivity extends AppCompatActivity {
 

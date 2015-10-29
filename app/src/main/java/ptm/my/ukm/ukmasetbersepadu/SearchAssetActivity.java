@@ -12,9 +12,9 @@ import com.squareup.okhttp.OkHttpClient;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import my.ukm.ptm.ukmassetstracker.model.Asset;
-import my.ukm.ptm.ukmassetstracker.net.LoggingInterceptor;
-import my.ukm.ptm.ukmassetstracker.service.SmkApi;
+import ptm.my.ukm.ukmasetbersepadu.model.Asset;
+import ptm.my.ukm.ukmasetbersepadu.net.LoggingInterceptor;
+import ptm.my.ukm.ukmasetbersepadu.service.SmkApi;
 import retrofit.Call;
 import retrofit.Callback;
 import retrofit.GsonConverterFactory;

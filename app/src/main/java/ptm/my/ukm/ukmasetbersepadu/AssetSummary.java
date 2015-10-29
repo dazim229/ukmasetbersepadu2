@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import my.ukm.ptm.ukmassetstracker.adapter.PhotoAdapter;
-import my.ukm.ptm.ukmassetstracker.model.Asset;
+import ptm.my.ukm.ukmasetbersepadu.adapter.PhotoAdapter;
+import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 
 public class AssetSummary extends AppCompatActivity {
 

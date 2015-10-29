@@ -2,19 +2,84 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ptm.my.ukm.ukmasetbersepadu" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ScannerActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".DrawerActivity" >
+        </activity>
+        <activity
+            android:name=".SearchAssetActivity"
+            android:label="@string/title_activity_search_asset"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AssetDetailActivity"
+            android:label="@string/title_activity_asset_detail"
+            android:parentActivityName=".DrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AssetDetailImageActivity"
+            android:label="@string/title_activity_asset_detail_image"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".AssetSummary"
+            android:label="@string/title_activity_asset_summary"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SearchByIdActivity"
+            android:label="@string/title_activity_search_by_id"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

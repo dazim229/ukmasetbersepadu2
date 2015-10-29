@@ -14,9 +14,9 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import my.ukm.ptm.ukmassetstracker.AssetDetailActivity;
-import my.ukm.ptm.ukmassetstracker.R;
-import my.ukm.ptm.ukmassetstracker.model.Asset;
+import ptm.my.ukm.ukmasetbersepadu.AssetDetailActivity;
+import ptm.my.ukm.ukmasetbersepadu.R;
+import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 
 public class ResultListAdapter extends ArrayAdapter<Asset> {
 

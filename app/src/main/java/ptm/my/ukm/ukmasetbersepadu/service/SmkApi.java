@@ -2,8 +2,8 @@ package ptm.my.ukm.ukmasetbersepadu.service;
 
 import java.util.List;
 
-import my.ukm.ptm.ukmassetstracker.model.Asset;
-import my.ukm.ptm.ukmassetstracker.model.User;
+import ptm.my.ukm.ukmasetbersepadu.model.Asset;
+import ptm.my.ukm.ukmasetbersepadu.model.User;
 import retrofit.Call;
 import retrofit.http.GET;
 import retrofit.http.Path;

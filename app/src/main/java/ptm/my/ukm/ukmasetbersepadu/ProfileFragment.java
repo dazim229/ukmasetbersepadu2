@@ -14,7 +14,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import my.ukm.ptm.ukmassetstracker.model.User;
+import ptm.my.ukm.ukmasetbersepadu.model.User;
 
 
 public class ProfileFragment extends Fragment {

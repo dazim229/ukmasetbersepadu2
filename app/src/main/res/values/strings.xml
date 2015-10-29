@@ -1,6 +1,21 @@
 <resources>
-    <string name="app_name">ukmasetbersepadu</string>
+    <string name="app_name">UKM Aset Bersepadu</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_search_asset">SearchAssetActivity</string>
+    <string name="title_activity_asset_detail">AssetDetailActivity</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_asset_detail_image">AssetDetailImageActivity</string>
+    <string name="title_activity_asset_summary">AssetSummary</string>
+    <string name="title_activity_search_by_id">SearchByIdActivity</string>
 </resources>

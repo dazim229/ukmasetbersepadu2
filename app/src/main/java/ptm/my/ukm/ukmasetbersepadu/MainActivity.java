@@ -15,7 +15,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import my.ukm.ptm.ukmassetstracker.model.User;
+import ptm.my.ukm.ukmasetbersepadu.model.User;
 
 public class MainActivity extends AppCompatActivity {
 

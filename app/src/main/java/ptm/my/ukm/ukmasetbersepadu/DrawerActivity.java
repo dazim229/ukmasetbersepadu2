@@ -18,7 +18,7 @@ import com.github.clans.fab.FloatingActionMenu;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import my.ukm.ptm.ukmassetstracker.model.User;
+import ptm.my.ukm.ukmasetbersepadu.model.User;
 
 public class DrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

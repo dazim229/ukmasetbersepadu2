@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="asset_status">
+        <item>Baik</item>
+        <item>Hilang</item>
+        <item>Selenggara</item>
+        <item>Rosak</item>
+        <item>Alat pada pensyarah besara / cuti belajar</item>
+        <item>Alat pada pensyarah</item>
+        <item>Alat dipinjamkan</item>
+    </string-array>
+    <string-array name="locFak">
+        <item>Pilih Lokasi</item>
+        <item>Canselori</item>
+        <item>Fakulti Perubatan</item>
+        <item>Fakulti Pendidikan</item>
+    </string-array>
+    <string-array name="locJab">
+        <item>Pilih Lokasi</item>
+        <item>Pusat Teknologi Maklumat</item>
+        <item>Pusat Pengajian Fizik Gunaan</item>
+    </string-array>
+</resources>
