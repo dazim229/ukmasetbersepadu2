@@ -122,7 +122,7 @@ public class DrawerActivity extends AppCompatActivity
             ft.commit();
 
         } else if (id == R.id.nav_logout) {
-            Intent i = new Intent(this,LoginActivity.class);
+            Intent i = new Intent(this,LoginActivity2.class);
             finish();
             startActivity(i);
 
