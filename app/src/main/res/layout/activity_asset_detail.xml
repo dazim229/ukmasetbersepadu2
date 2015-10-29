@@ -60,7 +60,7 @@
                         android:layout_alignLeft="@+id/tvItemCode"
                         android:layout_alignStart="@+id/tvItemCode"
                         android:layout_below="@+id/tvItemCode"
-                        android:text="Zebra GX430t Thermal transfer Printer 300-dpi"
+                        android:text="dasdasdasdasdsdasdcvcvvcnvmxcvnxcZebra GX430t Thermal transfer Printer 300-dpi"
                         android:textSize="18dp" />
 
                     <TextView
