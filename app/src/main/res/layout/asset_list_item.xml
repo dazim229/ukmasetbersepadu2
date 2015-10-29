@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvItemCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="A01-001-0005-009"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tvItemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvItemCode"
+            android:layout_alignStart="@+id/tvItemCode"
+            android:layout_below="@+id/tvItemCode"
+            android:text="Zebra GX430t Thermal transfer Printer 300-dpi"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvItemId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvItemDesc"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tvItemDesc"
+            android:text="0"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tvItemType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemDesc"
+            android:text="Inventori" />
+
+        <TextView
+            android:id="@+id/tvItemCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemType"
+            android:text="PENCETAK (PRINTER)" />
+
+        <TextView
+            android:id="@+id/tvItemDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemCategory"
+            android:text="JABATAN PERKHIDMATAN PELAJAR" />
+
+        <TextView
+            android:id="@+id/tvItemFak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemDepartment"
+            android:text="Kolej Pendeta Za'ba" />
+
+        <TextView
+            android:id="@+id/tvItemReceiveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemFak"
+            android:text="2013-02-25" />
+
+        <TextView
+            android:id="@+id/tvItemValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemReceiveDate"
+            android:text="2380.00" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
