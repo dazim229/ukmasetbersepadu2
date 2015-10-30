@@ -118,6 +118,7 @@ public class LoginActivity2 extends AppCompatActivity {
                     Intent i = new Intent(getApplicationContext(), DrawerActivity.class);
                     i.putExtra("user", user);
                     startActivity(i);
+                    finish();
 
                 } else {
                     Toast.makeText(getBaseContext(), "Log Masuk Tidak Berjaya", Toast.LENGTH_LONG).show();
