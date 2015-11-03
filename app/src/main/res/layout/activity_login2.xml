@@ -27,7 +27,8 @@
             <EditText android:id="@+id/input_ukmper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="UKMPer" />
+                android:hint="UKMPer"
+                android:text="18359" />
         </android.support.design.widget.TextInputLayout>
 
         <!--  Password Label -->
@@ -40,7 +41,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="Kata Laluan"/>
+                android:hint="Kata Laluan"
+                android:text="123" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton

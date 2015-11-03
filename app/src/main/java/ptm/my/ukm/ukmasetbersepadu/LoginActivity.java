@@ -58,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         okHttpClient.interceptors().add(new LoggingInterceptor());
 
         Retrofit retrofit = new Retrofit.Builder()
+                //.baseUrl("http://appsmu.ukm.my/smkapi/")
                 .baseUrl("http://smkphp.ukm.my/ruang/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)

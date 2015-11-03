@@ -75,6 +75,7 @@ public class AssetListFragment extends Fragment {
         okHttpClient.interceptors().add(new LoggingInterceptor());
 
         Retrofit retrofit = new Retrofit.Builder()
+                //.baseUrl("http://10.1.140.42/efast/api/")
                 .baseUrl("http://smkphp.ukm.my/ruang/efast/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
