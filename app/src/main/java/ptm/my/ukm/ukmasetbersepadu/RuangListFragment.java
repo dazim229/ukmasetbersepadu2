@@ -1,5 +1,6 @@
 package ptm.my.ukm.ukmasetbersepadu;
 
+
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -16,7 +17,9 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import ptm.my.ukm.ukmasetbersepadu.adapter.ResultListAdapter;
+import ptm.my.ukm.ukmasetbersepadu.adapter.ResultListRuangAdapter;
 import ptm.my.ukm.ukmasetbersepadu.model.Asset;
+import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 import ptm.my.ukm.ukmasetbersepadu.net.LoggingInterceptor;
 import ptm.my.ukm.ukmasetbersepadu.service.SmkApi;
 import retrofit.Call;
@@ -25,23 +28,21 @@ import retrofit.GsonConverterFactory;
 import retrofit.Response;
 import retrofit.Retrofit;
 
-/**
- * Created by fird on 09/10/2015.
- */
-public class HistoryFragment extends Fragment {
-    @Bind(R.id.listAsset)
-    ListView lvAsset;
 
-    ResultListAdapter resultListAdapter;
+public class RuangListFragment extends Fragment {
 
-    public static HistoryFragment newInstance() {
-        HistoryFragment fragment = new HistoryFragment();
+    @Bind(R.id.listAsset)  ListView lvAsset;
+
+    ResultListRuangAdapter resultListRuangAdapter;
+
+    public static RuangListFragment newInstance() {
+        RuangListFragment fragment = new RuangListFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
 
-    public HistoryFragment() {
+    public RuangListFragment() {
     }
 
     @Override
@@ -51,7 +52,7 @@ public class HistoryFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_list_asset, container, false);
+        return inflater.inflate(R.layout.fragment_list_ruang, container, false);
     }
 
     @Override
@@ -59,8 +60,8 @@ public class HistoryFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         ButterKnife.bind(this, getActivity());
 
-        resultListAdapter = new ResultListAdapter(getActivity(),0);
-        lvAsset.setAdapter(resultListAdapter);
+        resultListRuangAdapter = new ResultListRuangAdapter(getActivity(),0);
+        lvAsset.setAdapter(resultListRuangAdapter);
         getAsset("1");
     }
 
@@ -76,22 +77,23 @@ public class HistoryFragment extends Fragment {
         okHttpClient.interceptors().add(new LoggingInterceptor());
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.1.140.42/efast/api/")
+                //.baseUrl("http://10.1.140.42/efast/api/")
+                .baseUrl("http://smkphp.ukm.my/ruang/efast/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();
 
         SmkApi smkApi = retrofit.create(SmkApi.class);
-        Call<List<Asset>> assetCall = smkApi.getListAsset("1","5");
-        assetCall.enqueue(new Callback<List<Asset>>() {
+        Call<List<Ruang>> assetCall = smkApi.getListRuang("1", "200");
+        assetCall.enqueue(new Callback<List<Ruang>>() {
             @Override
-            public void onResponse(Response<List<Asset>> response) {
+            public void onResponse(Response<List<Ruang>> response) {
                 dialog.dismiss();
                 if(response == null){
                     Snackbar.make(lvAsset, "not found id:", Snackbar.LENGTH_LONG).show();
                 }else {
-                    resultListAdapter.addAll(response.body());
-                   resultListAdapter.notifyDataSetChanged();
+                    resultListRuangAdapter.addAll(response.body());
+                    resultListRuangAdapter.notifyDataSetChanged();
                 }
 
             }

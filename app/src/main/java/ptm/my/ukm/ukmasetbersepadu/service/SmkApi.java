@@ -4,6 +4,7 @@ import java.util.List;
 
 import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 import ptm.my.ukm.ukmasetbersepadu.model.User;
+import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 import retrofit.Call;
 import retrofit.http.GET;
 import retrofit.http.Path;
@@ -26,6 +27,12 @@ public interface SmkApi {
 
     @GET("asset/getall/{start}/{end}")
     Call<List<Asset>> getListAsset(
+            @Path("start") String start,
+            @Path("end") String end
+    );
+
+    @GET("asset/getfabam003kbangunan/{start}/{end}")
+    Call<List<Ruang>> getListRuang(
             @Path("start") String start,
             @Path("end") String end
     );

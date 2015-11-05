@@ -121,6 +121,12 @@ public class DrawerActivity extends AppCompatActivity
             ft.replace(R.id.fragment_container, HistoryFragment.newInstance());
             ft.commit();
 
+        }else if (id == R.id.nav_master_list_ruang) {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction ft = fragmentManager.beginTransaction();
+            ft.replace(R.id.fragment_container, RuangListFragment.newInstance());
+            ft.commit();
+
         } else if (id == R.id.nav_logout) {
             Intent i = new Intent(this,LoginActivity2.class);
             finish();

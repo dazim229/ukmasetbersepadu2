@@ -49,7 +49,7 @@ public class ResultListAdapter extends ArrayAdapter<Asset> {
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i = new Intent(mContext,AssetDetailActivity.class);
+                    Intent i = new Intent(mContext, AssetDetailActivity.class);
                     Asset searchResult = (Asset) v.findViewById(R.id.tvItemCode).getTag();
                     i.putExtra("asset", searchResult);
                     mContext.startActivity(i);

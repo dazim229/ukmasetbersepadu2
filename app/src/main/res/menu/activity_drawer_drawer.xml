@@ -15,6 +15,10 @@
             android:icon="@android:drawable/ic_menu_gallery"
             android:title="Master List" />
         <item
+            android:id="@+id/nav_master_list_ruang"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Ruang List" />
+        <item
             android:id="@+id/nav_logout"
             android:icon="@android:drawable/ic_menu_manage"
             android:title="Logout" />
