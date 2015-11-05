@@ -188,6 +188,10 @@ public class Asset implements Parcelable {
         dest.writeString(this.costcrtDesc);
         dest.writeString(this.departmentCode);
         dest.writeString(this.category);
+
+
+        
+
     }
 
     public Asset() {

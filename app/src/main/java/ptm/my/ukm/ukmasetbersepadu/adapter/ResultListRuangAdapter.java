@@ -16,6 +16,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import ptm.my.ukm.ukmasetbersepadu.AssetDetailActivity;
 import ptm.my.ukm.ukmasetbersepadu.R;
+import ptm.my.ukm.ukmasetbersepadu.RuangDetailActivity;
 import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 
@@ -47,15 +48,15 @@ public class ResultListRuangAdapter extends ArrayAdapter<Ruang> {
             convertView = mLayoutInflater.inflate(R.layout.ruang_list_item, parent, false);
             vh = new ViewHolder(convertView);
             convertView.setTag(vh);
-//            convertView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Intent i = new Intent(mContext,AssetDetailActivity.class);
-//                    Asset searchResult = (Asset) v.findViewById(R.id.tvItemCode).getTag();
-//                    i.putExtra("asset", searchResult);
-//                    mContext.startActivity(i);
-//                }
-//            });
+            convertView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(mContext,RuangDetailActivity.class);
+                    Ruang searchResult = (Ruang) v.findViewById(R.id.tvItemCode).getTag();
+                    i.putExtra("asset", searchResult);
+                    mContext.startActivity(i);
+                }
+            });
 
         } else {
             vh = (ViewHolder) convertView.getTag();
@@ -63,7 +64,7 @@ public class ResultListRuangAdapter extends ArrayAdapter<Ruang> {
 
         Ruang searchResult = getItem(position);
 
-        vh.tvItemCode.setTag(searchResult);
+          vh.tvItemCode.setTag(searchResult);
 //        vh.tvItemCategory.setText(searchResult.getCategory());
           vh.tvItemCode.setText(searchResult.getNmBangunan());
 //        vh.tvItemDepartment.setText(searchResult.getDepartmentCode());

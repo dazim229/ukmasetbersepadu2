@@ -16,6 +16,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import ptm.my.ukm.ukmasetbersepadu.AssetDetailActivity;
 import ptm.my.ukm.ukmasetbersepadu.R;
+import ptm.my.ukm.ukmasetbersepadu.RuangDetailActivity;
 import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 
 public class ResultListAdapter extends ArrayAdapter<Asset> {
@@ -50,6 +51,7 @@ public class ResultListAdapter extends ArrayAdapter<Asset> {
                 @Override
                 public void onClick(View v) {
                     Intent i = new Intent(mContext, AssetDetailActivity.class);
+//                    Intent i = new Intent(mContext, RuangDetailActivity.class);
                     Asset searchResult = (Asset) v.findViewById(R.id.tvItemCode).getTag();
                     i.putExtra("asset", searchResult);
                     mContext.startActivity(i);

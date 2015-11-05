@@ -13,8 +13,7 @@ import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 
 public class AssetDetailActivity extends AppCompatActivity {
 
-    @Bind(R.id.toolbar)
-    Toolbar toolbar;
+    @Bind(R.id.toolbar) Toolbar toolbar;
     @Bind(R.id.tvItemCategory) TextView tvItemCategory;
     @Bind(R.id.tvItemCode) TextView tvItemCode;
     @Bind(R.id.tvItemDepartment) TextView tvItemDepartment;
