@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="UKM Asset Tracker"
+        android:text="UKM Asset Bersepadu"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textIsSelectable="false"
         android:textSize="24dp"
