@@ -15,7 +15,7 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:text="A01-001-0005-009"
+            android:text="Kolej Hussein Onn"
             android:textSize="24dp" />
 
         <TextView
@@ -24,10 +24,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/tvItemCode"
-            android:text="0"
+            android:text="1"
             android:textSize="24dp"
             android:layout_alignParentLeft="false"
             android:layout_alignParentRight="true" />
+
+
 
     </RelativeLayout>
 

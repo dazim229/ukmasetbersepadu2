@@ -31,10 +31,16 @@ public interface SmkApi {
             @Path("end") String end
     );
 
-    @GET("asset/getfabam003kbangunan/{start}/{end}")
+    @GET("asset/getAllBangunanList/{start}/{end}")
     Call<List<Ruang>> getListRuang(
             @Path("start") String start,
             @Path("end") String end
     );
+
+    @GET("asset/getAllBlokAssignToBangunanWithId/{idBangunn}")
+    Call<List<Ruang>> getListBlokByBangunn(
+            @Path("idBangunn") String idBangunn
+    );
+
 
 }
