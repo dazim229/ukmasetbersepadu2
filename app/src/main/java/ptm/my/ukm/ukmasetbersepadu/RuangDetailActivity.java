@@ -1,6 +1,5 @@
 package ptm.my.ukm.ukmasetbersepadu;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,8 +7,6 @@ import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
-import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 
 public class RuangDetailActivity extends AppCompatActivity {
@@ -32,11 +29,11 @@ public class RuangDetailActivity extends AppCompatActivity {
 //        }
 
         if (getIntent() != null){
-            asset = getIntent().getParcelableExtra("asset");
+               asset = getIntent().getParcelableExtra("asset");
 
-              getSupportActionBar().setTitle(asset.getNmBangunan());
-              tvItemCode.setText(asset.getNmBangunan());
-              tvAssetCode.setText(asset.getIdBangunan());
+              getSupportActionBar().setTitle(asset.getNmBangunan_ba());
+              tvItemCode.setText(asset.getNmBangunan_ba());
+              tvAssetCode.setText(asset.getIdBangunan_ba());
 
         }
 

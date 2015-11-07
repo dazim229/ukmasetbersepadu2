@@ -15,7 +15,7 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:text="Kolej Hussein Onn"
+            android:text="Blok A (FSK), FSK A"
             android:textSize="16dp" />
 
         <TextView

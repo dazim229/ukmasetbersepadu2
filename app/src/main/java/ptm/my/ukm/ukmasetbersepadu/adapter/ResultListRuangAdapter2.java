@@ -1,7 +1,6 @@
 package ptm.my.ukm.ukmasetbersepadu.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,18 +14,16 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import ptm.my.ukm.ukmasetbersepadu.R;
-import ptm.my.ukm.ukmasetbersepadu.RuangDetailActivity;
-
 import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 
-public class ResultListRuangAdapter extends ArrayAdapter<Ruang> {
+public class ResultListRuangAdapter2 extends ArrayAdapter<Ruang> {
 
     private LayoutInflater mLayoutInflater;
     private ImageLoader imageLoader = ImageLoader.getInstance();
     private DisplayImageOptions options;
     private Context mContext;
 
-    public ResultListRuangAdapter(Context context, int resource) {
+    public ResultListRuangAdapter2(Context context, int resource) {
         super(context, resource);
         mLayoutInflater = LayoutInflater.from(context);
         options = new DisplayImageOptions.Builder()
@@ -44,16 +41,16 @@ public class ResultListRuangAdapter extends ArrayAdapter<Ruang> {
         final ViewHolder vh;
 
         if (convertView == null) {
-            convertView = mLayoutInflater.inflate(R.layout.ruang_list_item, parent, false);
+            convertView = mLayoutInflater.inflate(R.layout.ruang_list_item2, parent, false);
             vh = new ViewHolder(convertView);
             convertView.setTag(vh);
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i = new Intent(mContext,RuangDetailActivity.class);
-                    Ruang searchResult = (Ruang) v.findViewById(R.id.tvItemCode).getTag();
-                    i.putExtra("asset", searchResult);
-                    mContext.startActivity(i);
+//                    Intent i = new Intent(mContext,RuangDetailActivity.class);
+//                    Ruang searchResult = (Ruang) v.findViewById(R.id.tvItemCode).getTag();
+//                    i.putExtra("asset", searchResult);
+//                    mContext.startActivity(i);
                 }
             });
 
@@ -65,11 +62,11 @@ public class ResultListRuangAdapter extends ArrayAdapter<Ruang> {
 
           vh.tvItemCode.setTag(searchResult);
 //        vh.tvItemCategory.setText(searchResult.getCategory());
-          vh.tvItemCode.setText(searchResult.getNmBangunan_ba());
+          vh.tvItemCode.setText(searchResult.getNmBlok_bl());
 //        vh.tvItemDepartment.setText(searchResult.getDepartmentCode());
 //        vh.tvItemFak.setText(searchResult.getCostcrtDesc());
 //        vh.tvItemDesc.setText(searchResult.getDescription());
-          vh.tvAssetCode.setText(searchResult.getIdBangunan_ba());
+          vh.tvAssetCode.setText(searchResult.getIdBlok_bl());
 //        vh.tvItemReceiveDate.setText(searchResult.getRecieveDate());
 //        vh.tvItemType.setText(searchResult.getType());
 //        vh.tvItemValue.setText(searchResult.getNettValue());

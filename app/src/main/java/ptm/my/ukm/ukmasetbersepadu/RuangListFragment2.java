@@ -16,10 +16,8 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import ptm.my.ukm.ukmasetbersepadu.adapter.ResultListAdapter;
 import ptm.my.ukm.ukmasetbersepadu.adapter.ResultListRuangAdapter;
 import ptm.my.ukm.ukmasetbersepadu.adapter.ResultListRuangAdapter2;
-import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 import ptm.my.ukm.ukmasetbersepadu.net.LoggingInterceptor;
 import ptm.my.ukm.ukmasetbersepadu.service.SmkApi;
@@ -30,21 +28,21 @@ import retrofit.Response;
 import retrofit.Retrofit;
 
 
-public class RuangListFragment extends Fragment {
+public class RuangListFragment2 extends Fragment {
 
     @Bind(R.id.listAsset)  ListView lvAsset;
 
-    ResultListRuangAdapter resultListRuangAdapter;
+    ResultListRuangAdapter2 resultListRuangAdapter;
 
 
-    public static RuangListFragment newInstance() {
-        RuangListFragment fragment = new RuangListFragment();
+    public static RuangListFragment2 newInstance() {
+        RuangListFragment2 fragment = new RuangListFragment2();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
 
-    public RuangListFragment() {
+    public RuangListFragment2() {
     }
 
     @Override
@@ -54,7 +52,7 @@ public class RuangListFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_list_ruang, container, false);
+        return inflater.inflate(R.layout.fragment_list_ruang2, container, false);
     }
 
     @Override
@@ -62,7 +60,7 @@ public class RuangListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         ButterKnife.bind(this, getActivity());
 
-        resultListRuangAdapter = new ResultListRuangAdapter(getActivity(),0);
+        resultListRuangAdapter = new ResultListRuangAdapter2(getActivity(),0);
         lvAsset.setAdapter(resultListRuangAdapter);
         getAsset("1");
 
@@ -90,7 +88,7 @@ public class RuangListFragment extends Fragment {
                 .build();
 
         SmkApi smkApi = retrofit.create(SmkApi.class);
-        Call<List<Ruang>> assetCall = smkApi.getListRuang("1", "200");
+        Call<List<Ruang>> assetCall = smkApi.getListBlokByBangunn("6");
         assetCall.enqueue(new Callback<List<Ruang>>() {
             @Override
             public void onResponse(Response<List<Ruang>> response) {
