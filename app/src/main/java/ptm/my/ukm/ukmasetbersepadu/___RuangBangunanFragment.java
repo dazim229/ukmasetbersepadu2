@@ -45,6 +45,7 @@ public class ___RuangBangunanFragment extends Fragment {
     ResultListRuangAdapter resultListRuangAdapter;
 
     private static final String ARG_USER = "param1";
+    private static final String ARG_USER1 = "param2";
     private User user;
     private ImageLoader imageLoader;
     private DisplayImageOptions options;
