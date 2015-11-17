@@ -2,7 +2,6 @@ package ptm.my.ukm.ukmasetbersepadu.service;
 
 import java.util.List;
 
-import ptm.my.ukm.ukmasetbersepadu.model.Asset;
 import ptm.my.ukm.ukmasetbersepadu.model.User;
 import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 import retrofit.Call;
@@ -20,16 +19,6 @@ public interface SmkApi {
             @Path("password") String password
     );
 
-    @GET("asset/get/{assetId}")
-    Call<Asset> getAsset(
-            @Path("assetId") String assetId
-    );
-
-    @GET("asset/getall/{start}/{end}")
-    Call<List<Asset>> getListAsset(
-            @Path("start") String start,
-            @Path("end") String end
-    );
 
     @GET("asset/getAllBangunanList/{start}/{end}")
     Call<List<Ruang>> getListRuang(
@@ -41,6 +30,13 @@ public interface SmkApi {
     Call<List<Ruang>> getListBlokByBangunn(
             @Path("idBangunn") String idBangunn
     );
+
+    @GET("asset/getAllBlokAssignToBangunanWithId/{idBangunn}")
+    Call<Ruang> getListBlokByBangunn1(
+            @Path("idBangunn") String idBangunn
+    );
+
+
 
 
 }

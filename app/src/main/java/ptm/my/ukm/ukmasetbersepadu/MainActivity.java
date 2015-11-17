@@ -1,71 +1,44 @@
 package ptm.my.ukm.ukmasetbersepadu;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.view.View;
 
-import com.github.clans.fab.FloatingActionButton;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 import ptm.my.ukm.ukmasetbersepadu.model.User;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    @Bind(R.id.tvItemCode) TextView tvName;
-    @Bind(R.id.tvJawatan) TextView tvJawatan;
-    @Bind(R.id.tvJbtnTugas) TextView tvJbtnTugas;
-    @Bind(R.id.tvUkmper) TextView tvUkmper;
-    @Bind(R.id.ivPhoto) ImageView ivPhoto;
-    @Bind(R.id.fabQr) FloatingActionButton fabQr;
-    @Bind(R.id.fabSearch) FloatingActionButton fabSearch;
-
     private User user;
-    private ImageLoader imageLoader;
-    private DisplayImageOptions options;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        imageLoader = ImageLoader.getInstance();
-        options = new DisplayImageOptions.Builder()
-                .showImageOnLoading(R.mipmap.ic_launcher)
-                .cacheInMemory(true)
-                .cacheOnDisk(true)
-                .bitmapConfig(Bitmap.Config.RGB_565)
-                .build();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction ft = fragmentManager.beginTransaction();
+        ft.replace(R.id.fragment_container, ____RuangEditBangunanFragment.newInstance(user));
+        ft.commit();
 
-        user = getIntent().getParcelableExtra("user");
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
 
-        tvName.setText(user.getNama());
-        tvJawatan.setText(user.getNamaJawHakiki());
-        tvJbtnTugas.setText(user.getNamaJabHakiki());
-        tvUkmper.setText(user.getUkmper());
-        imageLoader.displayImage(user.getGambarUrl(), ivPhoto, options);
+                finish();
 
-    }
-
-    @OnClick(R.id.fabQr) void scanQr() {
-        Intent i = new Intent(this,ScannerActivity.class);
-        startActivity(i);
-    }
-
-    @OnClick(R.id.fabSearch) void assetSearch(){
-        Intent i = new Intent(this,SearchByIdActivity.class);
-        startActivity(i);
+            }
+        });
     }
 
 }

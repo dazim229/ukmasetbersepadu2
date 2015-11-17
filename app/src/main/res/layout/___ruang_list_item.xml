@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll1">
+
+            <TextView
+                android:id="@+id/tvItemCode"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Kolej Hussein Onn"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvItemId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/tvItemCode"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/ll2"-->
+        <!--android:layout_below="@+id/ll1">-->
+
+            <!--<fragment android:name="ptm.my.ukm.ukmasetbersepadu.BlankFragment"-->
+                <!--android:id="@+id/list"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--tools:layout="@layout/fragment_blank" />-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+

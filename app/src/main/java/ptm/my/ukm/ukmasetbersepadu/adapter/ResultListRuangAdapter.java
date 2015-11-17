@@ -1,7 +1,6 @@
 package ptm.my.ukm.ukmasetbersepadu.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,9 +13,8 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import ptm.my.ukm.ukmasetbersepadu.R;
-import ptm.my.ukm.ukmasetbersepadu.RuangDetailActivity;
 
+import ptm.my.ukm.ukmasetbersepadu.R;
 import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 
 public class ResultListRuangAdapter extends ArrayAdapter<Ruang> {
@@ -25,6 +23,10 @@ public class ResultListRuangAdapter extends ArrayAdapter<Ruang> {
     private ImageLoader imageLoader = ImageLoader.getInstance();
     private DisplayImageOptions options;
     private Context mContext;
+
+
+
+
 
     public ResultListRuangAdapter(Context context, int resource) {
         super(context, resource);
@@ -44,21 +46,27 @@ public class ResultListRuangAdapter extends ArrayAdapter<Ruang> {
         final ViewHolder vh;
 
         if (convertView == null) {
-            convertView = mLayoutInflater.inflate(R.layout.ruang_list_item, parent, false);
+            convertView = mLayoutInflater.inflate(R.layout.___ruang_list_item, parent, false);
+
             vh = new ViewHolder(convertView);
             convertView.setTag(vh);
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i = new Intent(mContext,RuangDetailActivity.class);
-                    Ruang searchResult = (Ruang) v.findViewById(R.id.tvItemCode).getTag();
-                    i.putExtra("asset", searchResult);
-                    mContext.startActivity(i);
+//                    Intent i = new Intent(mContext,RuangDetailActivity.class);
+//                    Intent i = new Intent(mContext,Main3Activity.class);
+//                    Ruang searchResult = (Ruang) v.findViewById(R.id.tvItemCode).getTag();
+////                    Log.e("Success", searchResult.toString());
+//                    i.putExtra("asset", searchResult);
+//                    mContext.startActivity(i);
                 }
             });
 
-        } else {
+        }
+        else {
             vh = (ViewHolder) convertView.getTag();
+
+
         }
 
         Ruang searchResult = getItem(position);

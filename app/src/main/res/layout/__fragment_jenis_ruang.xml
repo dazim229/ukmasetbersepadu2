@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="my.ukm.ptm.ukmassetstracker.ProfileFragment"
+    android:padding="8dp">
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout22"
+        android:layout_below="@+id/linearLayout20"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:id="@+id/relativeLayout22">
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout30">
+
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/source1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/g1_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:onClick="onClick"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#cc000000" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Ruang Bangunan"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mempunyai arkitektur dalam dan luar. Ruang dalam dibatasi lanatai, dinding dan bumbung. Ruang luar adalah lingkungan terbuka yang mempuyai tujuan dan merupakan sebahagian dariapada bangunan"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout23"
+        android:layout_below="@+id/linearLayout22"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1">
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout31">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/source3"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/g1_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:onClick="onClick"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#cc000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Ruang Rekreasi Terbuka"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ruang Terbuka untuk tujuan"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout24"
+        android:layout_below="@+id/linearLayout23"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1">
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout32">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/source5"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/g1_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:onClick="onClick"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#cc000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Infrastruktur"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ruang untuk tujuan kemudahan"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout25"
+        android:layout_below="@+id/linearLayout24"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1">
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout33">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/source7"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/g1_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:onClick="onClick"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#cc000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Tanah UKM"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Maklumat mengenai aset tanah UKM"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
