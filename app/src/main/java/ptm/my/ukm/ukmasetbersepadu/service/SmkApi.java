@@ -5,7 +5,12 @@ import java.util.List;
 import ptm.my.ukm.ukmasetbersepadu.model.User;
 import ptm.my.ukm.ukmasetbersepadu.model.Ruang;
 import retrofit.Call;
+import retrofit.Callback;
+import retrofit.Response;
+import retrofit.http.Field;
+import retrofit.http.FormUrlEncoded;
 import retrofit.http.GET;
+import retrofit.http.POST;
 import retrofit.http.Path;
 
 /**
@@ -35,6 +40,12 @@ public interface SmkApi {
     Call<Ruang> getListBlokByBangunn1(
             @Path("idBangunn") String idBangunn
     );
+
+    @GET("asset/add_user/{nmBangunn}")
+    Call<Ruang> addBangunn(
+            @Path("nmBangunn") String nmBangunn
+    );
+
 
 
 

@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -25,6 +26,9 @@ public class __JenisRuangFragment extends Fragment {
 //    @Bind(R.id.tvUkmper) TextView tvUkmper;
 //    @Bind(R.id.ivPhoto) ImageView ivPhoto;
     @Bind(R.id.source1) ImageView source1;
+    @Bind(R.id.textView14)   TextView textView14;
+    @Bind(R.id.textView15) TextView textView15;
+
 
 
 
@@ -51,8 +55,10 @@ public class __JenisRuangFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
+//        Intent intent = getIntent();
+//        Bundle bundle = intent.getExtras();
+//        String tempat = bundle.getString("lokasit");
+//        textView14.setText().
 
 
 
@@ -71,6 +77,8 @@ public class __JenisRuangFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         user = getArguments().getParcelable(ARG_USER);
 //        initProfile(user);
+
+
 
         source1.setOnClickListener(new View.OnClickListener() {
             //Start new list activity

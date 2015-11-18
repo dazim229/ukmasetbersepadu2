@@ -35,6 +35,13 @@ public class _ProfileFragment extends Fragment {
     @Bind(R.id.source7) ImageView source7;
     @Bind(R.id.source8) ImageView source8;
     @Bind(R.id.source9) ImageView source9;
+    @Bind(R.id.source10) ImageView source10;
+
+    @Bind(R.id.txt1) TextView txt1;
+    @Bind(R.id.txt2) TextView txt2;
+
+    @Bind(R.id.txt5) TextView txt5;
+    @Bind(R.id.txt6) TextView txt6;
 
 
 
@@ -87,103 +94,116 @@ public class _ProfileFragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), __DrawerActivity2.class);
                 i.putExtra("user", user);
+//                i.putExtra("lokasit", txt1.getText().toString());
+//                i.putExtra("lokasin", txt2.getText().toString());
                 startActivity(i);
 //
 
             }
         });
 
-        source2.setOnClickListener(new View.OnClickListener() {
-            //Start new list activity
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
-                i.putExtra("user", user);
-                startActivity(i);
+//        source2.setOnClickListener(new View.OnClickListener() {
+//            //Start new list activity
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+//                i.putExtra("user", user);
+//                startActivity(i);
+////
 //
-
-            }
-        });
+//            }
+//        });
 
         source3.setOnClickListener(new View.OnClickListener() {
             //Start new list activity
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), __DrawerActivity2.class);
                 i.putExtra("user", user);
+//                i.putExtra("lokasit", txt1.getText().toString());
+//                i.putExtra("lokasin", txt2.getText().toString());
                 startActivity(i);
 //
 
             }
         });
 
-        source4.setOnClickListener(new View.OnClickListener() {
-            //Start new list activity
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
-                i.putExtra("user", user);
-                startActivity(i);
+//        source4.setOnClickListener(new View.OnClickListener() {
+//            //Start new list activity
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+//                i.putExtra("user", user);
+//                startActivity(i);
+////
 //
-
-            }
-        });
-
-        source5.setOnClickListener(new View.OnClickListener() {
-            //Start new list activity
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
-                i.putExtra("user", user);
-                startActivity(i);
+//            }
+//        });
 //
-
-            }
-        });
-
-        source6.setOnClickListener(new View.OnClickListener() {
-            //Start new list activity
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
-                i.putExtra("user", user);
-                startActivity(i);
+//        source5.setOnClickListener(new View.OnClickListener() {
+//            //Start new list activity
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+//                i.putExtra("user", user);
+//                startActivity(i);
+////
 //
-
-            }
-        });
-
-        source7.setOnClickListener(new View.OnClickListener() {
-            //Start new list activity
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
-                i.putExtra("user", user);
-                startActivity(i);
+//            }
+//        });
 //
-
-            }
-        });
-
-        source8.setOnClickListener(new View.OnClickListener() {
-            //Start new list activity
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
-                i.putExtra("user", user);
-                startActivity(i);
+//        source6.setOnClickListener(new View.OnClickListener() {
+//            //Start new list activity
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+//                i.putExtra("user", user);
+//                startActivity(i);
+////
 //
-
-            }
-        });
-
-
-
-        source9.setOnClickListener(new View.OnClickListener() {
-            //Start new list activity
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
-                i.putExtra("user", user);
-                startActivity(i);
+//            }
+//        });
 //
+//        source7.setOnClickListener(new View.OnClickListener() {
+//            //Start new list activity
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+//                i.putExtra("user", user);
+//                startActivity(i);
+////
+//
+//            }
+//        });
+//
+//        source8.setOnClickListener(new View.OnClickListener() {
+//            //Start new list activity
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+//                i.putExtra("user", user);
+//                startActivity(i);
+////
+//
+//            }
+//        });
+//
+//
+//
+//        source9.setOnClickListener(new View.OnClickListener() {
+//            //Start new list activity
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+//                i.putExtra("user", user);
+//                startActivity(i);
+////
+//
+//            }
+//        });
 
-            }
-        });
-
-
+//        source10.setOnClickListener(new View.OnClickListener() {
+//            //Start new list activity
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+//                i.putExtra("user", user);
+//                startActivity(i);
+//
+//
+//            }
+//        });
 
 
 //

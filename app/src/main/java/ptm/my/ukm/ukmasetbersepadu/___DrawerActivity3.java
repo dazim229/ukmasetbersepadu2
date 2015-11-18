@@ -73,7 +73,7 @@ public class ___DrawerActivity3 extends AppCompatActivity
 
     @OnClick(R.id.fabEdit) void fabEditBangunan(){
         fabMain.close(false);
-        Intent i = new Intent(this,MainActivity.class);
+        Intent i = new Intent(this,___EditBangunanActivity.class);
         startActivity(i);
     }
     @Override

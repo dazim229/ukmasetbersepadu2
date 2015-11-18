@@ -131,19 +131,19 @@
                         android:orientation="vertical" >
 
                         <TextView
-                            android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                            android:id="@+id/txt1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="10dp"
-                            android:text="Kampus Bangi"
+                            android:text="Kampus Induk"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
                         <TextView
-                            android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                            android:id="@+id/txt2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Selangor"
+                            android:text="Bangi"
                             android:textColor="@android:color/white"
                             android:textSize="10sp" />
 
@@ -178,7 +178,7 @@
                         android:orientation="vertical" >
 
                         <TextView
-                            android:id="@+id/item_swip_to_dissmiss_travel_header1"
+                            android:id="@+id/txt3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="10dp"
@@ -187,7 +187,7 @@
                             android:textSize="18sp" />
 
                         <TextView
-                            android:id="@+id/item_swip_to_dissmiss_travel_subheader1"
+                            android:id="@+id/txt4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Kuala Lumpur"
@@ -255,7 +255,7 @@
                             android:orientation="vertical" >
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                                android:id="@+id/txt5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -265,7 +265,7 @@
                                 android:textIsSelectable="false" />
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                                android:id="@+id/txt6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Cheras"
@@ -303,7 +303,7 @@
                             android:orientation="vertical" >
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_header1"
+                                android:id="@+id/txt7"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -312,7 +312,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_subheader1"
+                                android:id="@+id/txt8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Langkawi"
@@ -380,7 +380,7 @@
                             android:orientation="vertical" >
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                                android:id="@+id/txt9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -389,7 +389,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                                android:id="@+id/txt10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Teluk Intan"
@@ -427,13 +427,13 @@
                             android:orientation="vertical" >
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_header1"
+                                android:id="@+id/txt11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
                                 android:text="Pusat Penyelidikan"
                                 android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
                             <TextView
                                 android:id="@+id/item_swip_to_dissmiss_travel_subheader1"
@@ -505,16 +505,16 @@
                             android:orientation="vertical" >
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                                android:id="@+id/txt13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
                                 android:text="Pusat Penyelidikan"
                                 android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                                android:id="@+id/txt14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Tasik Chini"
@@ -552,16 +552,16 @@
                             android:orientation="vertical" >
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_header1"
+                                android:id="@+id/txt15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
                                 android:text="Pusat Penyelidikan"
                                 android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_subheader1"
+                                android:id="@+id/txt16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Mersing"
@@ -629,16 +629,17 @@
                             android:orientation="vertical" >
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_header2"
+                                android:id="@+id/txt17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
                                 android:text="Pusat Latihan Dan Khidmat Masyarakat"
                                 android:textColor="@android:color/white"
-                                android:textSize="18sp" />
+                                android:textSize="18sp"
+                                android:gravity="center" />
 
                             <TextView
-                                android:id="@+id/item_swip_to_dissmiss_travel_subheader2"
+                                android:id="@+id/txt18"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Tanjung Karang"
@@ -648,6 +649,56 @@
                         </LinearLayout>
 
                     </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="1dp">
+
+                        <ImageView
+                            android:id="@+id/source10"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/g1_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#cc000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/txt19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Pusat Latihan Dan Khidmat Masyarakat"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/item_swip_to_dissmiss_travel_subheader1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kuala Pilah"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
 
                 </LinearLayout>
 

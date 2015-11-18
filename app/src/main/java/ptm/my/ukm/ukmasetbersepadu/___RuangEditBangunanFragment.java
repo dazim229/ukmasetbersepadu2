@@ -30,7 +30,7 @@ import retrofit.Response;
 import retrofit.Retrofit;
 
 
-public class ____RuangEditBangunanFragment extends Fragment {
+public class ___RuangEditBangunanFragment extends Fragment {
 
 //    @Bind(R.id.tvItemCode) TextView tvName;
 //    @Bind(R.id.tvJawatan) TextView tvJawatan;
@@ -51,15 +51,15 @@ public class ____RuangEditBangunanFragment extends Fragment {
     private Context mContext;
 
 
-    public static ____RuangEditBangunanFragment newInstance(User param1) {
-        ____RuangEditBangunanFragment fragment = new ____RuangEditBangunanFragment();
+    public static ___RuangEditBangunanFragment newInstance(User param1) {
+        ___RuangEditBangunanFragment fragment = new ___RuangEditBangunanFragment();
         Bundle args = new Bundle();
         args.putParcelable(ARG_USER, param1);
         fragment.setArguments(args);
         return fragment;
     }
 
-    public ____RuangEditBangunanFragment() {
+    public ___RuangEditBangunanFragment() {
         // Required empty public constructor
     }
 
