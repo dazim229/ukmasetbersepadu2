@@ -116,7 +116,7 @@ public class _ProfileFragment extends Fragment {
         source3.setOnClickListener(new View.OnClickListener() {
             //Start new list activity
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), __DrawerActivity2.class);
+                Intent i = new Intent(getActivity(), __DrawerActivity22.class);
                 i.putExtra("user", user);
 //                i.putExtra("lokasit", txt1.getText().toString());
 //                i.putExtra("lokasin", txt2.getText().toString());

@@ -13,29 +13,32 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.github.clans.fab.FloatingActionMenu;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import ptm.my.ukm.ukmasetbersepadu.model.User;
 
-public class _DrawerActivity extends AppCompatActivity
+public class ___DrawerActivity32 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
     @Bind(R.id.drawer_layout)
     DrawerLayout drawer;
-    @Bind(R.id.fabMain)
-    FloatingActionMenu fabMain;
+//    @Bind(R.id.fabMain)
+//    FloatingActionMenu fabMain;
 
     private User user;
 
+    ___DrawerActivity32 c = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout._activity_drawer);
+        setContentView(R.layout.___activity_drawer2);
         ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
@@ -51,12 +54,28 @@ public class _DrawerActivity extends AppCompatActivity
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();
-        ft.replace(R.id.fragment_container, _ProfileFragment.newInstance(user));
+        ft.replace(R.id.fragment_container, ___RuangBangunanFragment2.newInstance(user));
         ft.commit();
     }
 
 
-
+//    @OnClick(R.id.fabAdd) void fabAddBangunan() {
+//        fabMain.close(false);
+//               final MaterialDialog dialog =  new MaterialDialog.Builder(this)
+//                .title("BANGUNAN")
+//                .content("Input Data Bangunan Baru(develop)")
+////                .progress(true, 0)
+//                .show();
+//
+////        Intent i = new Intent(this,_LoginActivity.class);
+////        startActivity(i);
+//    }
+//
+//    @OnClick(R.id.fabEdit) void fabEditBangunan(){
+//        fabMain.close(false);
+//        Intent i = new Intent(this,___EditBangunanActivity.class);
+//        startActivity(i);
+//    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

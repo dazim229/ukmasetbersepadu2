@@ -19,7 +19,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import ptm.my.ukm.ukmasetbersepadu.model.User;
 
-public class _DrawerActivity extends AppCompatActivity
+public class __DrawerActivity22 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Bind(R.id.toolbar)
@@ -30,7 +30,6 @@ public class _DrawerActivity extends AppCompatActivity
     FloatingActionMenu fabMain;
 
     private User user;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +50,7 @@ public class _DrawerActivity extends AppCompatActivity
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();
-        ft.replace(R.id.fragment_container, _ProfileFragment.newInstance(user));
+        ft.replace(R.id.fragment_container, __JenisRuangFragment2.newInstance(user));
         ft.commit();
     }
 

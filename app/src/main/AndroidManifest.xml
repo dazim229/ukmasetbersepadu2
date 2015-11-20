@@ -3,15 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ptm.my.ukm.ukmasetbersepadu" >
 
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- not needed as of api 23 -->
+    <!--
+         according to https://developers.google.com/maps/documentation/android-api/config it will
+         be removed in a future releaes completely
+    -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature
@@ -57,12 +71,28 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity android:name=".MainActivity" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
+        <activity
+            android:name=".__DrawerActivity22"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".___DrawerActivity32"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+
+
+
     </application>
 
 </manifest>

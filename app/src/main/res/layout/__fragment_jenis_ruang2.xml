@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Kampus Induk"
+                android:text="PPUKM"
                 android:id="@+id/textView14"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="15dp" />
@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Bangi"
+                android:text="Cheras"
                 android:id="@+id/textView15"
                 android:layout_marginTop="5dp" />
         </LinearLayout>
@@ -244,8 +244,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/g1_image2"
                                 android:layout_width="match_parent"
-                                android:layout_height="125dp"
-                                android:onClick="onClick"/>
+                                android:layout_height="125dp" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -322,8 +321,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/g1_image2"
                                 android:layout_width="match_parent"
-                                android:layout_height="125dp"
-                                android:onClick="onClick"/>
+                                android:layout_height="125dp" />
 
                             <View
                                 android:layout_width="match_parent"

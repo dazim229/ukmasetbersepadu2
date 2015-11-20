@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/g1_image2.jpg" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/add.png" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/edit.png" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/menu.png" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/shut_screen.png" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/x.png" charset="windows-1252" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
